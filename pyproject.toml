@@ -1,0 +1,37 @@
+[project]
+# Standard project metadata as defined by PEP 621
+name = "PdM-Microsof-Azure" # Your project's name on PyPI
+version = "0.1.0"           # Current version of your project
+description = "A short description of what my project does"
+readme = "README.md"        # Path to your project's long description
+requires-python = ">=3.10"   # Minimum Python version required
+
+authors = [
+    {name = "Your Name", email = "your.email@example.com"},
+]
+
+license = {text = "MIT"} # Or {file = "LICENSE"} if you have a separate file
+
+keywords = ["python", "packaging", "example"]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+# Runtime dependencies for your project
+dependencies = [
+    "pandas",
+    "numpy",
+    "plotly"
+]
+
+[project.optional-dependencies]
+# Dependencies needed for development (e.g., testing, linting)
+dev = [
+    "pytest",
+    "black",
+    "isort",
+    "nbformat>=4.2.0"
+]
