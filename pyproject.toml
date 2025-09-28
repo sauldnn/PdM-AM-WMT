@@ -24,7 +24,9 @@ classifiers = [
 dependencies = [
     "pandas",
     "numpy",
-    "plotly"
+    "plotly",
+    "xgboost",
+    "scikit-learn"
 ]
 
 [project.optional-dependencies]
