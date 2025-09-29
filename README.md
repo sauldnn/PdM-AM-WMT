@@ -15,15 +15,25 @@ The pipeline covers:
 
 .
 ├── data/ # Input datasets (CSVs)
+
 ├── models/ # Exported models (output artifacts)
+
 ├── tfx_pipeline/ # TFX pipeline definition
+
 │ ├── pipeline.py # Pipeline entry point
+
 │ ├── components.py # Custom components
+
 ├── pyproject.toml # Project dependencies
+
 ├──src/model_core/
+
 │ ├── feature_dev.py # feature transformation logic in pandas
+
 │ ├── model_train_func.py # model training process
+
 ├── uv.lock Lockfile
+
 └── Dockerfile # Docker image definition
 
 
@@ -95,5 +105,7 @@ Implement a serving container (FastAPI or TFX Serving) that loads latest_model f
 Orchestrate with Airflow / Kubeflow for scheduled retraining.
 
 Integrate an experiment tracker (MLflow, Vertex AI, etc.) for full lineage and monitoring.
+
+```
 
 ![alt text](image.png)
