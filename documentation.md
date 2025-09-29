@@ -57,7 +57,6 @@ Orchestration: Local DAG runner (demo); extensible to Airflow or Kubeflow
 
 ## 5. Workflow Diagram
 
-```mermaid
            ┌───────────────┐
 
            │   CSV Data    │
@@ -104,7 +103,6 @@ Orchestration: Local DAG runner (demo); extensible to Airflow or Kubeflow
 
            └───────────────┘
 
-```
 
 ## 6. Future Extensions
 
