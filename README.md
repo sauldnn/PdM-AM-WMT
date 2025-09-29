@@ -59,17 +59,18 @@ From the project root:
 
 ```bash
 docker build -t pdm-tfx-pipeline:latest .
-
+```
 
 ▶️ Run the Batch Pipeline
 
 Mount data/ (input datasets) and models/ (pipeline outputs) from the host:
 
+```bash
 docker run --rm -it \
   -v $(pwd)/data:/app/data \
   -v $(pwd)/models:/app/models \
   pdm-tfx-pipeline:latest
-
+```
 
 This will run the pipeline steps:
 
@@ -103,7 +104,10 @@ CD (Continuous Delivery): The validated model is exported and ready to be deploy
 
 To open a shell inside the container:
 
+
+```bash
 docker run --rm -it pdm-tfx-pipeline:latest /bin/bash
+```
 
 🚀 Next Steps
 
@@ -113,6 +117,5 @@ Orchestrate with Airflow / Kubeflow for scheduled retraining.
 
 Integrate an experiment tracker (MLflow, Vertex AI, etc.) for full lineage and monitoring.
 
-```
 
 ![alt text](image.png)
