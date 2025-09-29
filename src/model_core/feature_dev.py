@@ -93,7 +93,7 @@ def generate_telemetry_features(telemetry_df, fields, verbose=True):
 
     # 3. Combine Mean and Standard Deviation features
     telemetry_feat = pd.concat([
-        telemetry_mean_24h.iloc[:, FEATURE_COLS_SLICE],
+        telemetry_mean_24h,
         telemetry_sd_24h.iloc[:, FEATURE_COLS_SLICE]
     ], axis=1).dropna()
     

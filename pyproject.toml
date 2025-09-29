@@ -4,7 +4,7 @@ name = "PdM-Microsof-Azure" # Your project's name on PyPI
 version = "0.1.0"           # Current version of your project
 description = "A short description of what my project does"
 readme = "README.md"        # Path to your project's long description
-requires-python = ">=3.10"   # Minimum Python version required
+requires-python = "==3.10.*"   # Minimum Python version required
 
 authors = [
     {name = "Your Name", email = "your.email@example.com"},
@@ -25,8 +25,11 @@ dependencies = [
     "pandas",
     "numpy",
     "plotly",
+    "nbformat",
     "xgboost",
-    "scikit-learn"
+    "scikit-learn",
+    "apache-beam",
+    "joblib"
 ]
 
 [project.optional-dependencies]
