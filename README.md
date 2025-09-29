@@ -33,7 +33,9 @@ The pipeline covers:
 
 │ ├── model_train_func.py # model training process
 
-├── uv.lock Lockfile
+├── uv.lock # Lockfile
+
+├── EDA.ipynb # Exploratory Data Analysis on the input data
 
 └── Dockerfile # Docker image definition
 
