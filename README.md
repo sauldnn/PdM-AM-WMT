@@ -45,6 +45,10 @@ The pipeline covers:
 ## ⚙️ Requirements
 
 - [Docker](https://docs.docker.com/get-docker/)  
+- Sklearn
+- XgBoost
+- Apache-beam
+- TFX
 - (Optional) Python 3.9+ and [uv](https://github.com/astral-sh/uv) if you want to run locally without Docker  
 
 ---
